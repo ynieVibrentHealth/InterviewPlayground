@@ -16,7 +16,7 @@ class CustomCell:UITableViewCell {
     
     public func configure(with text:String) {
         label.text = text
-    
+        label.backgroundColor = .white
         setNeedsUpdateConstraints()
         updateConstraintsIfNeeded()
     }
@@ -28,12 +28,12 @@ class CustomCell:UITableViewCell {
     }
 }
 
-class CustomTableView:UITableView {
+class CustomTableView: UITableView {
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
-        tableview.register(CustomCell.self, forCellReuseIdentifier: CustomCell.reuseID)
-        tableview.dataSource = TableViewDataSource()
-        
+        self.register(CustomCell.self, forCellReuseIdentifier: CustomCell.reuseID)
+        self.dataSource = TableViewDataSource()
+        self.backgroundColor = .white
         //do I need to add anything else here?
     }
     
@@ -57,7 +57,7 @@ class TableViewDataSource:NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableview.dequeueReusableCell(withIdentifier: CustomCell.reuseID, for: indexPath) as! CustomCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.reuseID, for: indexPath) as! CustomCell
         
         cell.configure(with: sampleText[indexPath.row])
         
@@ -65,8 +65,7 @@ class TableViewDataSource:NSObject, UITableViewDataSource {
     }
 }
 let frame = CGRect(x: 0, y: 0, width: 400, height: 700)
-let tableview = CustomTableView(frame: frame , style: .plain)
-tableview.dataSource = TableViewDataSource()
+let tableview = CustomTableView(frame: frame, style: .grouped)
 
 
 PlaygroundPage.current.liveView = tableview
