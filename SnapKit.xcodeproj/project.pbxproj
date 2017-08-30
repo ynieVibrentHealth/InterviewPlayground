@@ -14,10 +14,10 @@
 /* Begin PBXFileReference section */
 		38C58709AAD12CE399DF963E /* Pods_SnapKitPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKitPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBDF8394A16FD99578FAD80 /* Pods-SnapKitPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKitPlayground/Pods-SnapKitPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		4C1E32E71F56DE47006A4589 /* SnapKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SnapKit.playground; sourceTree = "<group>"; };
 		E1EB2CE963B5EA7A25BED25B /* Pods-SnapKitPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKitPlayground/Pods-SnapKitPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		E34DC89F9A58AB40CEFACF10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E37F0EA62414141E6C996E29 /* SnapKitPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3D0458CA54111870D6441B2 /* SnapKit.playground */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.playground; name = SnapKit.playground; path = /Users/yuchennie/Vibrent/DemoProjects/SnapKitPlayground/SnapKit.playground; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				D58FC1A278E5DE781A7B5256 /* Products */,
 				2DAB77592C8411ADCD78FCFA /* Frameworks */,
-				E3D0458CA54111870D6441B2 /* SnapKit.playground */,
+				4C1E32E71F56DE47006A4589 /* SnapKit.playground */,
 				00111E935F26E7139EA25DCD /* Pods */,
 			);
 			sourceTree = "<group>";
