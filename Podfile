@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'SnapKitPlayground' do
 pod 'SnapKit'
+pod 'PureLayout'
 end
 
 post_install do |installer|
