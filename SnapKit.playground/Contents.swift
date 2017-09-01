@@ -16,16 +16,6 @@ class CustomCell:UITableViewCell {
         return label
     }()
     
-    private lazy var buttonLabel:UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.backgroundColor = .blue
-        label.text = "Button"
-        label.textColor = .white
-        self.contentView.addSubview(label)
-        return label
-    }()
-    
     public func configure(with text:String) {
         label.text = text
         label.backgroundColor = .white
@@ -35,18 +25,8 @@ class CustomCell:UITableViewCell {
     }
     
     override func updateConstraints() {
-        //what to do with the constraints?
-        
-        label.snp.updateConstraints { (make) in
-            make.leading.top.bottom.equalTo(self.contentView).inset(10)
-            make.width.equalTo(self.contentView).multipliedBy(0.5)
-        }
-        
-        buttonLabel.snp.updateConstraints { (make) in
-            make.trailing.equalTo(self.contentView).inset(10)
-            make.centerY.equalTo(label)
-        }
-        
+        //what to do with the constraints, or how do I add constraints here?
+
         super.updateConstraints()
     }
 }
@@ -65,8 +45,7 @@ class CustomTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
     }
     
     func configureTableview() {
-        self.estimatedRowHeight = 150
-        self.rowHeight = UITableViewAutomaticDimension
+        //What do I need to add here so that the tableview auto calculate the height?
         
         self.register(CustomCell.self, forCellReuseIdentifier: CustomCell.reuseID)
         self.dataSource = self
