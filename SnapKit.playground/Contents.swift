@@ -9,6 +9,8 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 class CustomCell:UITableViewCell {
     static let reuseID = "CustomCellREUSEID"
     
+    let imgURL = URL(string: "http://lorempixel.com/400/400/")
+    
     private lazy var label:UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -32,7 +34,11 @@ class CustomCell:UITableViewCell {
 }
 
 class CustomTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
-    let sampleText:[String] = ["Text test Text test Text test Text test ","Text test "]
+    let sampleText:[String] = ["Text test Text test Text test Text test ",
+                               "Text test Text test ",
+                               "Text test Text test Text test ",
+                               "Text test Text test Text test Text test Text test ",
+                               "Text test "]
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)

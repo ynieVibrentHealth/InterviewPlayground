@@ -9,8 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    private let textInput = ["test text test text test text test text test text test text ",
-                             "test text test text "]
+    private let textInput:[String] = ["Text test Text test Text test Text test ",
+                               "Text test Text test ",
+                               "Text test Text test Text test ",
+                               "Text test Text test Text test Text test Text test ",
+                               "Text test "]
     
     @IBOutlet weak var tableView: UITableView!
 

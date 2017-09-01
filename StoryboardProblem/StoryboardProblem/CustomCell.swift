@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class CustomCell:UITableViewCell {
+    let imgURL = URL(string: "http://lorempixel.com/400/400/")
     
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var buttonLabel: UILabel!
