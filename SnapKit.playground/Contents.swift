@@ -40,7 +40,7 @@ class CustomTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
                                "Text test Text test Text test Text test Text test ",
                                "Text test "]
     
-    override init(frame: CGRect, style: UITableViewStyle) {
+    override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         configureTableview()
     }
@@ -78,8 +78,8 @@ class CustomTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
 }
 
 let frame = CGRect(x: 0, y: 0, width: 300, height: 500)
-let tableview = CustomTableView(frame: frame, style: .plain)
+let tableView = CustomTableView(frame: frame)
 
 
-PlaygroundPage.current.liveView = tableview
+PlaygroundPage.current.liveView = tableView
 
